@@ -1,1 +1,11 @@
+// Select the textarea element in the DOM
+const textarea = document.querySelector("textarea");
 
+// Select the input element with class "file-name" in the DOM
+const fileNameInput = document.querySelector(".file-name input");
+
+// Select the select menu element with class "save-as" in the DOM
+const selectMenu = document.querySelector(".save-as select");
+
+// Select the button element with class "save-btn" in the DOM
+const saveBtn = document.querySelector(".save-btn");
