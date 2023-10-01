@@ -9,3 +9,12 @@ const selectMenu = document.querySelector(".save-as select");
 
 // Select the button element with class "save-btn" in the DOM
 const saveBtn = document.querySelector(".save-btn");
+
+// Add an event listener to the "change" event of the select menu
+selectMenu.addEventListener("change", () => {
+    // Get the selected format from the options in the select menu
+    const selectedFormat = selectMenu.options[selectMenu.selectedIndex].text;
+    
+    // Update the inner text of the save button to display the selected format
+    saveBtn.innerText = `Save As ${selectedFormat.split(" ")[0]} File`;
+});
