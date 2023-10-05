@@ -1,7 +1,15 @@
-const textarea = document.querySelector("textarea"),
-fileNameInput = document.querySelector(".file-name input"),
-selectMenu = document.querySelector(".save-as select"),
-saveBtn = document.querySelector(".save-btn");
+// Selecting the textarea element using querySelector and storing it in the variable textarea
+const textarea = document.querySelector("textarea");
+
+// Selecting the input element with class "file-name" and storing it in the variable fileNameInput
+const fileNameInput = document.querySelector(".file-name input");
+
+// Selecting the select menu element with class "save-as" and storing it in the variable selectMenu
+const selectMenu = document.querySelector(".save-as select");
+
+// Selecting the button element with class "save-btn" and storing it in the variable saveBtn
+const saveBtn = document.querySelector(".save-btn");
+
 
 selectMenu.addEventListener("change", () => {
     const selectedFormat = selectMenu.options[selectMenu.selectedIndex].text;
