@@ -22,11 +22,25 @@ selectMenu.addEventListener("change", () => {
 });
 
 
+// Adding an event listener for the "click" event on the saveBtn element
 saveBtn.addEventListener("click", () => {
+    
+    // Creating a Blob (binary large object) from the textarea value with the selected format
     const blob = new Blob([textarea.value], {type: selectMenu.value});
+    
+    // Creating a URL for the Blob to be used for downloading
     const fileUrl = URL.createObjectURL(blob);
+    
+    // Creating an anchor (link) element
     const link = document.createElement("a");
+    
+    // Setting the filename for the downloaded file
     link.download = fileNameInput.value;
+    
+    // Setting the URL of the link to the file URL
     link.href = fileUrl;
+    
+    // Triggering a click event on the link to initiate the download
     link.click();
 });
+
