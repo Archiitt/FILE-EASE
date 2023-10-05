@@ -11,10 +11,16 @@ const selectMenu = document.querySelector(".save-as select");
 const saveBtn = document.querySelector(".save-btn");
 
 
+// Adding an event listener for the "change" event on the selectMenu element
 selectMenu.addEventListener("change", () => {
+    
+    // Getting the selected option's text from the selectMenu
     const selectedFormat = selectMenu.options[selectMenu.selectedIndex].text;
+    
+    // Updating the inner text of the saveBtn to display the selected format
     saveBtn.innerText = `Save As ${selectedFormat.split(" ")[0]} File`;
 });
+
 
 saveBtn.addEventListener("click", () => {
     const blob = new Blob([textarea.value], {type: selectMenu.value});
