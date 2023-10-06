@@ -84,21 +84,3 @@ textarea:valid ~ .save-btn{
   pointer-events: auto;
   transition: all 0.3s ease;
 }
-
-@media screen and (max-width: 475px) {
-  .wrapper{
-    padding: 25px 18px 30px;
-  }
-  .wrapper :where(textarea, input, select, button, label){
-    font-size: 16px!important;
-  }
-  .file-options .option{
-    width: calc(100% / 2 - 5px);
-  }
-  .option :where(input, .select-menu){
-    padding: 0 10px;
-  }
-  .wrapper .save-btn{
-    padding: 15px 0;
-  }
-}
