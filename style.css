@@ -5,29 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: linear-gradient(100deg, #D6FF7F, #00B3CC, #402565, #30BE96, #F40076, #DF98FA, #E233FF, #FF6B00, #F14658, #DC2537, #F06966, #FAD6A6, #ED7B84, #9055FF, #DF98FA, #9055FF, #CB5EEE, #4BE1EC, #2F80ED,
-  #B2FFDA, #9055FF, #13E2DA, #0B63F6, #003CC5, #000066, #6699FF, #737DFE, #FFCAC9, #FF0076, #590FB7, #F40076, #342711, #FA7CBB, #F14658);
-  background-size: 1800% 1800%;
-}
-.wrapper{
-  width: 443px;
-  border-radius: 7px;
-  background: #fff;
-  padding: 30px 25px 40px;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-  background-color: transparent;
-  border: solid black 1px;
-}
-.wrapper :where(textarea, input, select, button){
-  width: 100%;
-  outline: none;
-  border: none;
-  font-size: 17px;
+
   border-radius: 5px;
 }
 .wrapper :where(textarea, input)::placeholder{
